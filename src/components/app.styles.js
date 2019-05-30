@@ -8,7 +8,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body,
   html {
-    font-family: 'Lato';
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
     width: 100%;
     padding: 0;

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const PhoneWrapper = styled.div`
+export const LoginWrapper = styled.div`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -11,10 +14,15 @@ export const Title = styled.div`
   font-size: 30px;
 `;
 
+export const InputTitle = styled.div`
+  font-size: 20px;
+  padding-top: 25px;
+`;
+
 export const Form = styled.form`
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   width: 300px;
-  padding: 20px 30px;
+  padding: 40px 30px;
 `;
 
 export const Input = styled.input`
@@ -36,7 +44,7 @@ export const SubmitHidden = styled.input`
 `;
 
 export const Submit = styled.label`
-  font-size: 20px;
+  font-size: 18px;
   width: 120px;
   height: 40px;
   color: #ffffff;
@@ -52,5 +60,17 @@ export const Submit = styled.label`
     rgb(233, 64, 87) 50%,
     rgb(138, 35, 135) 100%
   );
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+`;
+
+interface Props {
+  error: boolean;
+}
+
+export const Error = styled.div`
+  position: absolute;
+  margin-top: 310px;
+  display: ${(props: Props) => (props.error ? "block" : "none")};
+  color: red;
 `;

@@ -24,7 +24,7 @@ export const Step = styled.div`
   width: 100px;
 `;
 
-export const StepIcon = styled.div`
+export const StepIcon = styled<any>("div")`
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -57,7 +57,7 @@ export const IconTitle = styled.div`
   position: absolute;
   width: 100px;
   margin-top: 70px;
-  font-size: 16px;
+  font-size: 14px;
   padding-top: 10px;
   text-align: center;
   opacity: 0.7;
