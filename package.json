@@ -1,43 +1,58 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/jest": "24.0.13",
-    "@types/node": "12.0.2",
-    "@types/react": "16.8.18",
-    "@types/react-dom": "16.8.4",
-    "@types/styled-components": "^4.1.15",
-    "jest-dom": "^3.4.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "react-testing-library": "^7.0.1",
-    "styled-components": "^4.2.0",
-    "typescript": "3.4.5"
-  },
+  "name": "rijksmuseum-surfing-app",
+  "version": "1.0.0",
+  "description": "Rijksmuseum surfing app",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "webpack-dev-server": "webpack-dev-server",
+    "webpack": "webpack",
+    "prod": "npm run webpack -- --env.mode production",
+    "dev": "npm run webpack-dev-server -- --env.mode development --hot"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaizengami/rijksmuseum-surfing-app.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "kaizengami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaizengami/rijksmuseum-surfing-app/issues"
   },
+  "homepage": "https://github.com/kaizengami/rijksmuseum-surfing-app#readme",
   "devDependencies": {
-    "react-test-renderer": "^16.8.6"
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-preact": "^1.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.3",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.17.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.5.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.5.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "preact": "^8.4.2",
+    "preact-compat": "^3.18.5",
+    "preact-render-to-string": "^4.1.0"
   }
 }
