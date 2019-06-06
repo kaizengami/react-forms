@@ -2,7 +2,7 @@ workbox.core.skipWaiting();
 workbox.core.clientsClaim();
 
 workbox.routing.registerRoute(
-  new RegExp("https://kaizengami.github.io/react-forms/build/"),
+  new RegExp("https://kaizengami.github.io/react-forms/dist/"),
   new workbox.strategies.StaleWhileRevalidate()
 );
 

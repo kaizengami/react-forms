@@ -1,6 +1,6 @@
 # Preact app
 
-## [Demo](https://kaizengami.github.io/react-forms/build/)
+## [Demo](https://kaizengami.github.io/react-forms/dist/)
 
 ## Project Setup
 

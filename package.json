@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/kaizengami/rijksmuseum-surfing-app/issues"
   },
-  "homepage": "https://kaizengami.github.io/react-forms/build/",
+  "homepage": "https://kaizengami.github.io/react-forms/dist/",
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "awesome-typescript-loader": "^5.2.1",
