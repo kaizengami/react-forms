@@ -1,7 +1,7 @@
 {
-  "name": "rijksmuseum-surfing-app",
+  "name": "preact-forms",
   "version": "1.0.0",
-  "description": "Rijksmuseum surfing app",
+  "description": "Preact forms",
   "main": "index.js",
   "scripts": {
     "webpack-dev-server": "webpack-dev-server",
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/kaizengami/rijksmuseum-surfing-app/issues"
   },
-  "homepage": "https://github.com/kaizengami/rijksmuseum-surfing-app#readme",
+  "homepage": "https://kaizengami.github.io/react-forms/build/",
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "awesome-typescript-loader": "^5.2.1",
@@ -47,12 +47,14 @@
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.5.0",
-    "webpack-merge": "^4.2.1"
+    "webpack-merge": "^4.2.1",
+    "workbox-webpack-plugin": "^4.3.1"
   },
   "dependencies": {
     "@babel/core": "^7.4.5",
     "preact": "^8.4.2",
     "preact-compat": "^3.18.5",
-    "preact-render-to-string": "^4.1.0"
+    "preact-render-to-string": "^4.1.0",
+    "preact-router": "^2.6.1"
   }
 }

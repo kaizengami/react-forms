@@ -36,9 +36,9 @@ class Phone extends Component {
   }
 
   onTyping() {
-    let inputValue = this.input.value;
-    let mask = this.input.getAttribute("mask");
-    let lastChar = inputValue.slice(-1);
+    const inputValue = this.input.value;
+    const mask = this.input.getAttribute("mask");
+    const lastChar = inputValue.slice(-1);
 
     if (this.isKeyNumber(lastChar)) {
       this.applyMask(inputValue, mask);
@@ -70,6 +70,7 @@ class Phone extends Component {
     for (let i = 0; i < string.length; i++) {
       if (string.charAt(i) === "-") {
         indexes.push(i);
+        // const test = [...indexes, i]
       }
     }
     return indexes;
