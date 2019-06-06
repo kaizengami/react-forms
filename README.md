@@ -1,6 +1,6 @@
-# Rijksmuseum surfing app
+# Preact app
 
-## [Demo](https://kaizengami.github.io/rijksmuseum-surfing-app/dist/)
+## [Demo](https://kaizengami.github.io/react-forms/build/)
 
 ## Project Setup
 
