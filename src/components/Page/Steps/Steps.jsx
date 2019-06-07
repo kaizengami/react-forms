@@ -20,7 +20,11 @@ class Steps extends Component {
           <div className="icon-title">Phone</div>
         </div>
         <div className="steps-step">
-          <div className="step-icon">
+          <div
+            className={
+              this.props.step > 1 ? "step-icon step-icon-active" : "step-icon"
+            }
+          >
             <div className="step-icon-img">N</div>
           </div>
           <div className="icon-title">Name</div>
