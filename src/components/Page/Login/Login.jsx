@@ -1,6 +1,9 @@
 import { h, render, Component } from "preact";
+import { route } from "preact-router";
+
 import "./login.scss";
 import Error from "../../Error/Error";
+
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -8,9 +11,7 @@ class Login extends Component {
     this.state = {
       error: false
     };
-    // this.inputName = React.createRef();
-    // this.inputPassword = React.createRef();
-    // this.error = React.createRef();
+
     this.submit = this.submit.bind(this);
   }
 
@@ -20,11 +21,11 @@ class Login extends Component {
     let inputName = this.inputName.value;
     let inputPassword = this.inputPassword.value;
     if (inputName.length < 1 || inputPassword.length < 1) {
-      // this.error.current.innerHTML = "username or password is incorrect";
       this.setState({ error: true });
     } else {
       this.setState({ error: false });
       this.props.setLogin(true);
+      route("/phone");
     }
   }
 

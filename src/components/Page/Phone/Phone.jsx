@@ -51,8 +51,6 @@ class Phone extends Component {
     let coutryCode = mask.match(/{([^}]+)}/)[1];
     let hyphenIndexes = this.getHyphenPosition(mask);
 
-    console.log(hyphenIndexes);
-
     if (inputValue.includes(coutryCode)) {
       inputValue = inputValue.replace(/-/g, "");
       let stringArray = inputValue.split("");
@@ -78,6 +76,10 @@ class Phone extends Component {
 
   outOfFocus() {
     if (this.input.value.length === 4) this.input.value = "";
+  }
+
+  componentDidMount() {
+    this.props.setStep(1);
   }
 
   render() {

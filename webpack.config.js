@@ -12,6 +12,9 @@ module.exports = env => {
       resolve: {
         extensions: [".js", ".jsx", ".ts", ".tsx"]
       },
+      devServer: {
+        historyApiFallback: true
+      },
       plugins: [
         new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin({

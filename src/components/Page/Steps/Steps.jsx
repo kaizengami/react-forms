@@ -4,18 +4,17 @@ import "./steps.scss";
 class Steps extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      error: false,
-      step: this.props.step
-    };
   }
 
   render() {
     return (
       <div className="steps-wrapper">
         <div className="steps-step">
-          <div className="step-icon">
+          <div
+            className={
+              this.props.step > 0 ? "step-icon step-icon-active" : "step-icon"
+            }
+          >
             <div className="step-icon-img">I</div>
           </div>
           <div className="icon-title">Phone</div>
