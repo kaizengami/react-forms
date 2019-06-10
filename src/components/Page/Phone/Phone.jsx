@@ -1,4 +1,5 @@
 import { h, render, Component } from "preact";
+import { route } from "preact-router";
 
 import "./phone.scss";
 import Error from "../../Error/Error";
@@ -24,6 +25,7 @@ class Phone extends Component {
       this.setState({ error: true });
     } else {
       this.setState({ error: false });
+      route("/name");
     }
     this.setState({ error: value.length < 6 });
   }
@@ -94,7 +96,6 @@ class Phone extends Component {
             autoComplete="off"
             ref={input => (this.input = input)}
             data-testid="input"
-            pattern="[0-9]*"
             onKeyDown={this.isKeyNumber}
             onKeyUp={this.onTyping}
             onFocus={this.onTyping}

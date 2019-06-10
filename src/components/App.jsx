@@ -7,6 +7,7 @@ import "./App.css";
 import Login from "./Page/Login/Login";
 import Steps from "./Page/Steps/Steps";
 import Phone from "./Page/Phone/Phone";
+import Name from "./Page/Name/Name";
 import Footer from "./Footer/Footer";
 
 export class App extends Component {
@@ -35,7 +36,7 @@ export class App extends Component {
           <Router history={createHashHistory()}>
             <Login path="/" setLogin={this.setLogin.bind(this)} />
             <Phone path="/phone" setStep={this.setStep.bind(this)} />
-            {/* <Phone path="/name" /> */}
+            <Name path="/name" setStep={this.setStep.bind(this)} />
           </Router>
         </div>
         <Footer />

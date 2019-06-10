@@ -55,7 +55,7 @@ class Login extends Component {
           <input
             className="login-input-hidden"
             type="submit"
-            id="submit-number"
+            id="submit-login"
           />
         </form>
         {this.state.error && (
@@ -70,7 +70,7 @@ class Login extends Component {
         {/* <Error ref={this.error} error={this.state.error} data-testid="error" /> */}
         <label
           className="login-input-label"
-          htmlFor="submit-number"
+          htmlFor="submit-login"
           tabIndex={0}
         >
           Submit

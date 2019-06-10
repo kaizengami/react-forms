@@ -14,6 +14,9 @@ class Error extends Component {
       case "phone number":
         return "Not valid phone number";
         break;
+      case "name error":
+        return "Not valid name";
+        break;
       case "login error":
         return "Username or password is incorrect";
         break;
