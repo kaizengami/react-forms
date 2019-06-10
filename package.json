@@ -48,11 +48,11 @@
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.5.0",
     "webpack-merge": "^4.2.1",
-    "webpack-pwa-manifest": "^4.0.0",
     "workbox-webpack-plugin": "^4.3.1"
   },
   "dependencies": {
     "@babel/core": "^7.4.5",
+    "history": "^4.9.0",
     "preact": "^8.4.2",
     "preact-compat": "^3.18.5",
     "preact-render-to-string": "^4.1.0",

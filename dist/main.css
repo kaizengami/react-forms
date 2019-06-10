@@ -46,7 +46,18 @@ input[type="reset"] {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  animation-name: login-wrapper-animation;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1; }
+
+@keyframes login-wrapper-animation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .login-title {
   font-size: 30px; }
@@ -162,7 +173,18 @@ input[type="reset"] {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  animation-name: phone-wrapper-animation;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1; }
+
+@keyframes phone-wrapper-animation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .phone-form {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);

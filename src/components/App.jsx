@@ -1,4 +1,5 @@
 import Router from "preact-router";
+import createHashHistory from "history/createHashHistory";
 import { h, render, Component } from "preact";
 
 //import Page from "./Page/Page";
@@ -31,7 +32,7 @@ export class App extends Component {
       <div id="root">
         <div class="page">
           {this.state.isLogged && <Steps step={this.state.step} />}
-          <Router>
+          <Router history={createHashHistory()}>
             <Login path="/" setLogin={this.setLogin.bind(this)} />
             <Phone path="/phone" setStep={this.setStep.bind(this)} />
             {/* <Phone path="/name" /> */}
