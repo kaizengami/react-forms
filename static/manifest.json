@@ -5,40 +5,40 @@
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "theme_color": "#000000",
   "icons": [
     {
-      "src": "/static/icons/android-chrome-48-48",
+      "src": "static/icons/android-chrome-48-48",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "/static/icons/android-chrome-72-72",
+      "src": "static/icons/android-chrome-72-72",
       "type": "image/png",
       "sizes": "72x72"
     },
     {
-      "src": "/static/icons/android-chrome-96-96",
+      "src": "static/icons/android-chrome-96-96",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/static/icons/android-chrome-128-128",
+      "src": "static/icons/android-chrome-128-128",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "/static/icons/android-chrome-144-144",
+      "src": "static/icons/android-chrome-144-144",
       "type": "image/png",
       "sizes": "144x144"
     },
     {
-      "src": "/static/icons/android-chrome-192x192.png",
+      "src": "static/icons/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/static/icons/android-chrome-512x512.png",
+      "src": "static/icons/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
