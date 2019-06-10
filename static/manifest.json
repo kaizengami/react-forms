@@ -1,7 +1,7 @@
 {
   "name": "react-forms-pwa",
   "short_name": "react-forms-pwa",
-  "start_url": "/",
+  "start_url": "/react-forms/dist/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
