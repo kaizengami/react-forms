@@ -1,6 +1,6 @@
 {
-  "name": "react-forms-pwa",
-  "short_name": "react-forms-pwa",
+  "name": "Preact form pwa",
+  "short_name": "Preact forms",
   "start_url": "/react-forms/dist/",
   "display": "standalone",
   "orientation": "portrait",
@@ -8,37 +8,37 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "static/icons/android-chrome-48-48",
+      "src": "icons/android-chrome-48-48",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "static/icons/android-chrome-72-72",
+      "src": "icons/android-chrome-72-72",
       "type": "image/png",
       "sizes": "72x72"
     },
     {
-      "src": "static/icons/android-chrome-96-96",
+      "src": "icons/android-chrome-96-96",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "static/icons/android-chrome-128-128",
+      "src": "icons/android-chrome-128-128",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "static/icons/android-chrome-144-144",
+      "src": "icons/android-chrome-144-144",
       "type": "image/png",
       "sizes": "144x144"
     },
     {
-      "src": "static/icons/android-chrome-192x192.png",
+      "src": "icons/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "static/icons/android-chrome-512x512.png",
+      "src": "icons/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
