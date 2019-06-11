@@ -26,8 +26,22 @@ export class Menu extends Component {
       if (result !== "granted") {
         console.log("No notification permission granted");
       } else {
+        this.displayConfirmNotification();
       }
     });
+  }
+
+  displayConfirmNotification() {
+    if ("serviceWorker" in navigator) {
+      const options = {
+        body: "You successfully subscribed to our Notification service!"
+      };
+
+      navigator.serviceWorker.ready.then(swreg => {
+        swreg.showNotification("Successfully notified from SW", options);
+      });
+    }
+    // new Notification("Successfully notified", options);
   }
 
   render() {
