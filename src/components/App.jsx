@@ -4,6 +4,7 @@ import { h, render, Component } from "preact";
 
 //import Page from "./Page/Page";
 import "./App.css";
+import Menu from "./Menu/Menu";
 import Login from "./Page/Login/Login";
 import Steps from "./Page/Steps/Steps";
 import Phone from "./Page/Phone/Phone";
@@ -31,6 +32,7 @@ export class App extends Component {
   render() {
     return (
       <div id="root">
+        <Menu />
         <div class="page">
           {this.state.isLogged && <Steps step={this.state.step} />}
           <Router history={createHashHistory()}>
