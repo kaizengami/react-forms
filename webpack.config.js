@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const PrettierPlugin = require("prettier-webpack-plugin");
 const webpackMerge = require("webpack-merge");
 const workboxPlugin = require("workbox-webpack-plugin");
 
@@ -25,7 +26,8 @@ module.exports = env => {
         new workboxPlugin.InjectManifest({
           swSrc: "./src/sw.js",
           swDest: "./sw.js"
-        })
+        }),
+        new PrettierPlugin()
       ]
     },
     modeConfig(env)
